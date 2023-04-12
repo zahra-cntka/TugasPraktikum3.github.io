@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci</title>
+    <script>
+    function fibonacci(n) {
+    if (n <= 1) {
+      return n;
+    } else {
+      return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+  }
+  
+  function printFibonacciSequence(n) {
+    for (let i = 0; i < n; i++) {
+      console.log(fibonacci(i));
+    }
+  }
+  printFibonacciSequence(20);
+    </script>
+</head>
+<body>
+    <h1>Cara Melihat jawaban</h1>
+    <ol type="1">
+        <li>Buka Inspect</li>
+        <li>Klik Console</li>
+        <li>Akan muncul angka-angka deret Fibonacci</li>
+    </ol>
+</body>
+</html>
